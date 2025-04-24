@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url("images/ayodhya-bg-blur.png");
+  background-size: cover;
+  background-position: center;
+  color: #3b2300;
+}
+
+.quiz-card {
+  background: rgba(255, 248, 220, 0.9);
+  border-radius: 25px;
+  padding: 30px;
+  max-width: 700px;
+  margin: 60px auto;
+  box-shadow: 0 0 20px gold;
+  text-align: center;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.option-btn {
+  display: inline-block;
+  margin: 10px;
+  width: 140px;
+  background-color: #fff3e0;
+  transition: all 0.3s;
+}
+
+.option-btn:hover {
+  transform: scale(1.05);
+}
+
+.correct {
+  background-color: #c8e6c9 !important;
+}
+
+.wrong {
+  background-color: #ffcdd2 !important;
+}
+
+.next-button {
+  background-color: #8d4f1e;
+  color: white;
+  margin-top: 20px;
+}
+
+#character-animation img {
+  margin: 20px auto;
+  height: 160px;
+}
+
+.hidden {
+  display: none;
+}
+
+#level-select {
+  padding: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+#level-heading {
+  font-size: 22px;
+  color: goldenrod;
+  margin-bottom: 15px;
+}
+
+.character-gif {
+  animation: fadeIn 0.6s ease-in-out;
+  transition: transform 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.footer {
+  text-align: center;
+  color: #ffe9c7;
+  font-size: 16px;
+  padding: 20px 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: transparent;
+  backdrop-filter: blur(2px);
+}
