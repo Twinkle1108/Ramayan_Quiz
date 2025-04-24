@@ -63,7 +63,7 @@ const levels = {
     },
     {
       question: "Who stayed back in Ayodhya during Rama's exile?",
-      options: ["Lakshman", "Bharat", "Sita", "Shatrughna"],
+      options: ["Lakshman", "Bharat", "Sita", "Hanuman"],
       answer: "Bharat",
       character: "Bharat-gif.png"
     },
@@ -95,7 +95,7 @@ const levels = {
     },
     {
       question: "Who was the son of Ravana killed by Lakshmana?",
-      options: ["Meghanad", "Atikaya", "Indrajit", "Akshayakumara"],
+      options: ["Trishira", "Atikaya", "Indrajit", "Akshayakumara"],
       answer: "Indrajit",
       character: "Indrajeet-gif.png"
     },
@@ -228,8 +228,14 @@ function capitalize(str) {
 }
 
 
+
+
+
+
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js')
-    .then(() => console.log('✅ Service Worker Registered'))
-    .catch(err => console.log('❌ Service Worker failed:', err));
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('Service Worker registered', reg))
+      .catch(err => console.log('Service Worker error', err));
+  });
 }
